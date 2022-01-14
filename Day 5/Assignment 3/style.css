@@ -1,0 +1,66 @@
+body{
+  background-color: lightblue;
+}
+.skyline{
+  position:relative;
+}
+.greybox{
+  opacity: 80%;
+  width:40%;
+  height: 18%;
+  background-color: grey;
+  position: absolute;
+  bottom: 8%;
+  right: 5%;
+  color: white;
+  overflow:hidden;
+  font-size: 1.15vw;
+}
+#skyline{
+  width:100%;
+}
+#clock{
+  width:100%;
+}
+.greybox button{
+  width:15%;
+  height: 2%;
+  font-size: 1.15vw;
+  margin-bottom: 2%;
+}
+.boxtext{
+  margin: 1.5%;
+}
+.clock {
+  border:2px solid black;
+  position: relative;
+}
+.hourhand img{
+  width: 50%;
+  position:absolute;
+  bottom:38%;
+  left: 50%;
+  animation-duration:10s;
+  animation-timing-function: linear;
+  animation-name: hour;
+  transform-origin: 0% 50%;
+}
+.minutehand img{
+  transform-origin: 0% 50%;
+  width: 50%;
+  position:absolute;
+  bottom:37%;
+  left:50%;
+  transform: rotate(-90deg);
+  animation-duration:10s;
+  animation-timing-function: linear;
+  animation-name: minute;
+}
+@keyframes hour{
+  0%{}
+    100%{transform: rotate(30deg);}
+}
+@keyframes minute{
+  0%{}
+  100%{transform: rotate(270deg);}
+}

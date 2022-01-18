@@ -1,0 +1,200 @@
+body{
+  background-color: lightyellow;
+  position:relative;
+}
+.heading{
+  height: 12vh;
+  width:100%;
+  position: relative;
+  display:flex;
+}
+.logo{
+  animation: logo 2s infinite;
+  max-height:10vh;
+  max-width:10vw;
+  vertical-align: middle;
+
+}
+@keyframes logo{
+  0%{transform: scale(default);}
+  50%{transform: scale(0.5)}
+  100%{transform: scale(default);}
+}
+.logobox{
+  position:absolute;
+  top:2%;
+  left:3%;
+  width:9vw;
+  height:9vh;
+  display:flex;
+  justify-content: center;
+}
+.uptodown{
+  position: absolute;
+  top: 2%;
+  left: 15%;
+  font-size: 160%;
+  animation: 2s uptodown infinite alternate;
+}
+.downtoup{
+  position: absolute;
+  bottom: 20%;
+  left: 15%;
+  animation: 2s downtoup infinite alternate;
+}
+@keyframes uptodown{
+  100%{
+    opacity: 20%;
+    top:40%;
+  }
+}
+@keyframes downtoup{
+  100%{
+    opacity: 20%;
+    bottom:40%;
+  }
+}
+.slideswrap{
+  overflow:hidden;
+}
+.slides{
+  display:flex;
+  animation: slides 10s infinite;
+  z-index: 1;
+  width:300%;
+  margin:0;
+}
+.slides div{
+  width:100vw;
+}
+@keyframes slides{
+  33%{margin-left:-100%}
+  66%{margin-left: -200%}
+}
+.bigimg{
+  position:relative;
+}
+.bigimg img{
+  width:100%;
+}
+.bigimg div{
+  position:absolute;
+  top:10%;
+  background-image:linear-gradient(gray, white);
+  left:10%;
+  width:30%;
+  height:20%;
+  font-size: 1.5vw;
+  border: 4px solid white;
+}
+.flowerandtext{
+  margin:5%;
+  display:flex;
+  width:100%;
+  position: relative;
+}
+.flowers{
+  height:100%;
+  width:40vw;
+  position:relative;
+}
+#intro1{
+  width:100%;
+  opacity:50%;
+}
+#textinflowers{
+  position:absolute;
+  bottom:50%;
+  width:50%;
+  height:40%;
+  color:white;
+  border: 2px solid lightgreen;
+  left: 10%;
+  font-size: 80%;
+  overflow:hidden;
+}
+.textnexttoflowers{
+  background-image:linear-gradient(beige, white);
+  heigth:40vh;
+  width:60%;
+  color:green;
+  border: 2px solid grey;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.lotions{
+  display:flex;
+  width:100%;
+}
+.lotions div{
+  width: 25%;
+  margin:5%;
+}
+.col-4{
+  text-align: center;
+}
+.col-4 img{
+  width:90%;
+}
+.Ritual{
+  font-weight:bold;
+  color: green;
+  font-size: .9vw;
+}
+.description{
+  font-weight:bold;
+  font-size:1.6vw;
+}
+.description2{
+  font-size: .9vw;
+}
+.price{
+  font-size:1vw;
+}
+.shopping{
+  position:relative;
+}
+.button a{
+  background-color:black;
+  color:white;
+  text-decoration: none;
+  padding:2%;
+  font-size: .9vw;
+}
+.button a:hover{
+  background-color: blue;
+}
+.bigmodal{
+  opacity:0%;
+  background-color:rgba(255,255,159,0.5);
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0%;
+  pointer-events: none;
+}
+.bigmodal:target{
+  opacity:100%;
+  pointer-events:all;
+}
+.mod{
+  margin:auto;
+  background-color: gray;
+  border: 2px solid black;
+  text-align: center;
+  width:40%;
+  height:40%;
+  color:white;
+  font-size:4vw;
+  position:relative;
+}
+.mod a{
+  position:absolute;
+  text-decoration: none;
+  background-color: white;
+  right:0%;
+  top:0%;
+  font-size:40%;
+  padding-left: 2%;
+  padding-right: 2%;
+}

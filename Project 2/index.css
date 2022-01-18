@@ -151,7 +151,7 @@ body{
 .price{
   font-size:1vw;
 }
-.shopping{
+.shopping,.shopping2{
   position:relative;
 }
 .button a{
@@ -162,15 +162,15 @@ body{
   font-size: .9vw;
 }
 .button a:hover{
-  background-color: blue;
+  background-color: gray;
 }
 .bigmodal{
   opacity:0%;
-  background-color:rgba(255,255,159,0.5);
+  background-color:rgba(0,0,0,0.5);
   width:100%;
-  height:100%;
+  height:400%;
   position:absolute;
-  top:0%;
+  top:-250%;
   pointer-events: none;
 }
 .bigmodal:target{
@@ -179,16 +179,16 @@ body{
 }
 .mod{
   margin:auto;
-  background-color: gray;
+  margin-top:50%;
+  background-color: white;
   border: 2px solid black;
   text-align: center;
   width:40%;
-  height:40%;
-  color:white;
+  height:30%;
   font-size:4vw;
   position:relative;
 }
-.mod a{
+.x{
   position:absolute;
   text-decoration: none;
   background-color: white;
@@ -197,4 +197,50 @@ body{
   font-size:40%;
   padding-left: 2%;
   padding-right: 2%;
+}
+.mod img{
+  /* position: absolute; */
+  width: 100%;
+  left:5%;
+}
+.greyboxshopping{
+  font-size:50%;
+  background-color:lightgrey;
+  width:90%;
+  margin:auto;
+}
+.keepgoing{
+  text-decoration: none;
+  background-color: white;
+  color:black;
+  border:1px solid black;
+}
+li{
+  float:left;
+  font-size: 80%;
+}
+.connect{
+  float:right;
+  margin-right:2%;
+  font-size:.9vw;
+  position:relative;
+}
+footer{
+  height:40vh;
+  position:relative;
+}
+.icons{
+  position:absolute;
+  float:right;
+  display:flex;
+}
+.icons img{
+  width:20%;
+}
+.copyright{
+  position:absolute;
+  bottom:0%;
+  left:20%;
+  font-size:1vw;
+  text-align: center;
 }

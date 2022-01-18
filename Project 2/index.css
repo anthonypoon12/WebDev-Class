@@ -234,8 +234,8 @@ footer{
   float:right;
   display:flex;
 }
-.icons img{
-  width:20%;
+.icons a img{
+  width:4vw;
 }
 .copyright{
   position:absolute;

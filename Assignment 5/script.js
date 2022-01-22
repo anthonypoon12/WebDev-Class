@@ -2,22 +2,22 @@
 
 function tempconverter(){
     var intemp = document.getElementById('temp').value;
-    while(isNaN(intemp))
+    while(isNaN(intemp) || intemp==="")
         intemp = prompt("Please enter temperature in Celsius as a number");
     alert(`Your temperature in Fahrenheit is ${parseFloat(intemp) * 9 / 5 + 32} degrees`);
 }
 function BMI(){
     var lmass=parseFloat(document.getElementById('lmass').value);
-    while(isNaN(lmass))
+    while(isNaN(lmass) || lmass==="")
         lmass = prompt("Please enter a number for Lucas' mass");
     var lheight=parseFloat(document.getElementById('lheight').value);
-    while(isNaN(lheight))
+    while(isNaN(lheight) || lheight==="")
         lheight = prompt("Please enter a number for Lucas' height");
     var jmass=parseFloat(document.getElementById('jmass').value);
-    while(isNaN(jmass))
+    while(isNaN(jmass) || jmass==="")
         jmass = prompt("Please enter a number for John's mass");
     var jheight=parseFloat(document.getElementById('jheight').value);
-    while(isNaN(jheight))
+    while(isNaN(jheight) || jheight==="")
         jheight = prompt("Please enter a number for John's height");
     var johnBMI=jmass/jheight/jheight;
     var lucasBMI=lmass/lheight/lheight;

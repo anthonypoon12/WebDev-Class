@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Project3.css">
+    <title>Project3</title>
+</head>
+    <body>
+        <div class="header">
+            <h1>GUESS MY NUMBER</h1>
+            <h2>Guess the number between 1 and 100</h2>
+        </div>
+       
+        <div class="gamebox">
+            <div class="score">
+                <h2>Score: <span id= "score">10</span> </h2>
+                <h2>High Score: <span  id="highscore">0</span> </h2>
+            </div>
+ 
+            <div class="resetbutton">
+                <a id ="reset" href="#"><h1>Reset</h1></a>
+            </div>
+ 
+            <div class="smallbox">
+                <img src="thinking-gif-2018-1.gif" alt="">
+                <input class = "guess" type="text" name="" placeholder="Guess a number" id="userInput" onfocus="this.value=''">
+                <button class = "check" id="check" type="button">Check</button>
+                <h2>Guess a number</h2>
+            </div>
+ 
+            <div class="guesshistory">
+                <h1 style="margin:1%">Guess History</h1>
+                <ul id="log">
+                   
+                </ul>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

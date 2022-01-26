@@ -1,0 +1,102 @@
+body{
+    background-color: #b6e9ea;
+}
+ 
+.header h1{
+    color: #474340;
+    text-shadow: 2px 3px lightgray;
+    text-align: center;
+}
+ 
+.header h2{
+    color: black;
+    text-align: center;
+}
+.gamebox{
+    background-color: bisque;
+    border-radius: 30px;
+    display: flex;
+    height: 900px;
+    width: 900px;
+    margin: auto;
+    position: relative;
+    min-width: 500px;
+}
+ 
+.score{
+    background-color: rgba(248, 182, 196, 0.993);
+    border-radius: 30px;
+    height: 15%;
+    width: 18%;
+    position: absolute;
+    padding: 2%;
+    top: 2%;
+    left: 2%;
+}
+ 
+.resetbutton{
+    background-color: rgba(248, 182, 196, 0.993);
+    border-radius: 30px;
+    height: 10%;
+    width: 10%;
+    text-align: center;
+    position: absolute;
+    padding: auto;
+    top: 6%;
+    right: 2%;
+}
+ 
+.resetbutton a{
+    text-decoration: none;
+    color: black;
+}
+ 
+.smallbox{
+    background-color: #c1ad95;
+    border-radius: 30px;
+    margin: auto;
+    height: 50%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: auto;
+}
+ 
+.smallbox img{
+    height: 150px;
+    width: 150px;
+}
+ 
+.guess{
+    height: 75px;
+    width: 350px;
+    background-color: white;
+    border-radius: 30px;
+}
+ 
+.check{
+    height: 75px;
+    width: 100px;
+    background-color: #53b91c;
+    border-radius: 30px;
+}
+ 
+.smallbox h2{
+    color: white;
+}
+ 
+.guesshistory{
+    background-color: #b6e9ea;
+    min-height: 100px;
+    width: 500px;
+    border-radius: 30px;
+    border: black solid 2px;
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}

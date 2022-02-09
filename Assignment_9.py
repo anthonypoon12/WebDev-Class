@@ -1,8 +1,8 @@
-myList = {1,2,3,4}
-myList2={}
-for i in range(1,myList.length):
-    myList2+=List[i]
-myList2+="appendeditem"
+myList = [1,2,3,4]
+myList2=[]
+for i in range(1,len(myList)):
+    myList2.append(myList[i])
+myList2.append("appendeditem")
 myList2.pop(2)
 myList3 = myList2
 
@@ -14,4 +14,41 @@ myList3 = myList2
 # split([sep[,maxsplit]])
 # splitlines([keepends])
 # startswith(prefix[,start[,end]])
-# strip([chars])
+# strip([chars]) returns a copy of the string by removing both the leadig and the trailing characters
+
+def PartC(num):
+    if num < 2:
+        return False
+    if num==2:
+        return True
+    else:
+        for i in range (2,num):
+            if num % i == 0:
+                return False
+    return True
+def disStuInfo(schoolID, *firstName, **lastEmail):
+    fn = []
+    counter=0
+    for i in firstName:
+        fn.append(i)
+    if (len(lastEmail)>len(firstName)):
+        for i in range(len(firstName),len(lastEmail)):
+            fn.append("unmatched")
+    print(fn)
+    for i, j in lastEmail.items():
+        print(schoolID)
+        print(fn[counter])
+        counter=counter+1
+        print(i)
+        print(j)
+        print()
+    if len(firstName)>len(lastEmail):
+        for i in range(len(lastEmail),len(firstName)):
+            fn.append("unmatched")
+            print(schoolID)
+            print(fn[counter])
+            counter=counter+1
+            print("unmatched")
+            print()
+
+# disStuInfo( 1000, "Anthony","hi","hhhh",HOla="hey",Hello = "Hey", Poon = "anthoyn@Poons")
